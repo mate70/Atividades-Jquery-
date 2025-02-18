@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(p1).css("background","yellow").css("font-size","24px").fadeOut(2000);
+            });
+        });
+    </script>
+
+    <style>
+        .p {
+            width: 160px;
+            height: 30px;
+            margin-left: 400px;     
+        }
+        .button {
+            margin-left: 400px;
+            height: 65px;
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <button class="button">Clique aqui</button>
+    <p></p>
+    <p class="p" id="p1">Testando código</p>
+</body>
+</html>

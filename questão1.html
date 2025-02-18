@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback com fadeOut()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#p").fadeOut(1000, function(){
+                    alert("O parágrafo foi escondido!");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <p id="p">Este é um parágrafo que será ocultado ao clicar no botão.</p>
+    <button id="btn1">Ocultar Parágrafo</button>
+
+</body>
+</html>

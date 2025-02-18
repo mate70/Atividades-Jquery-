@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+       $("#btn1").click(function(){
+       $("#paragrafo").html("Este é um <strong>novo</strong> texto de exemplo")
+       });
+    });
+  </script>
+</head>
+
+<body>
+    <p id="paragrafo">Este é um texto de exemplo</p>
+
+    <button id="btn1">Alterar HTML</button>
+
+</body>
+</html>
